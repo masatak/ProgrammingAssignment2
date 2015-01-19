@@ -6,7 +6,7 @@
 
 ## Transform a matrix to a cached matrix. Using with 'cacheSolve'
 ## function, the pseudo matrix made by this functions allow you
-## to caches the calculated inverse matrix. 
+## to cache the calculated inverse matrix. 
 ## Internally, this returns a list of functions to access variables
 ## in the closure which saves the original matrix named 'x' and  
 ## the inverse matrix named 'inverse'.
@@ -55,7 +55,7 @@ cacheSolve <- function(x, ...) {
     }
     
     ## When the inverse matrix has not calculated,
-    ## get the original matrix ,inverse it and 
+    ## get the original matrix, inverse it and 
     ## save the result in order to use later.
     data <- x$get()
     m <- solve(data, ...)
